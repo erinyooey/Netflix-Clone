@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Watch TV Shows Online, Watch Movies Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/netflix_icon.png">
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <section id="banner" class="text-white container-fluid signin-banner">
+        <header id="header" class="pt-4">
+            <div class="container">
+                <div class="row">
+                    <div id="netflix-logo" class="col-6">
+                        <img src="netflix-logo.png" alt="Netflix Logo" class="logo">
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+
+        <div class="row m-0 mb-5 mx-auto sign-box" style="
+        background-color: rgba(0,0,0,0.7);">
+            <div class="col-12 d-flex justify-content-center height-100 flex-column align-items-center">
+               
+                <div class="mx-auto d-flex justify-content-center flex-column" style="width: 80%;">
+                    <h1>Forgot Password</h1>
+                    <form>
+                        <input type="email" id="email" class="signup-input" placeholder="Email" min-length="10" required/>
+                    </form>
+                    <div>
+                        <button type="submit"  id="forgetPass" class="button-red">Submit</button> 
+                    </div>
+                    <form>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="remember-me">
+                            <label class="form-check-label" for="remember-me">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                    <div class="signup-now">
+                        <div class="d-flex flex-row">
+                        <p class="mx-2">New to Netflix?</p>
+                        <a id="sign-link" href="signup.html" target="_self">Sign up now.</a>
+                        </div>
+                        <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="learn-more">Learn more.</span></p>
+                        <div id="learn-more-desc">
+                            The information collected by Google reCAPTCHA is subject to the Google <a href="Privacy Policy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).
+                        </div>
+                        
+                    </div>
+                </div>
+              
+
+            </div>
+            </div>
+
+    </section>
+    
+    <footer id="footer" class="text-white mb-5 mt-5">
+        <div class="text-white container height-20">
+            <div>
+                <p>Questions? Call <em>1-844-505-2993</em></p>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 d-flex flex-column">
+                    <a href="https://help.netflix.com/support/412" target="_self">FAQ</a>
+                    <a href="https://www.netflix.com/#" target="_self">Cookie Preferences</a>
+                </div>
+    
+                <div class="col-6 col-md-3 d-flex flex-column">
+                    <a href="https://help.netflix.com/" target="_self">Help Center</a>
+                    <a href="https://help.netflix.com/legal/corpinfo" target="_self">Corporate Information</a>
+                </div>
+    
+                <div class="col-6 col-md-3 d-flex flex-column"> 
+                    <a href="https://netflix.shop/" target="_self">Netflix Shop</a>
+                    <a href="https://help.netflix.com/legal/termsofuse" target="_self">Terms of Use</a>
+                    <a href="https://www.netflix.com/dnsspi" target="_self">Do Not Sell or Share My Personal Information</a>
+            
+
+
+                </div> 
+                <div class="col-6 col-md-3 d-flex flex-column">
+                    <a href="https://help.netflix.com/legal/privacy" target="_self">Privacy</a>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle language-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg class="globe" fill="#757575" width="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.38A7.82 7.82 0 0 0 8 .5a7.82 7.82 0 0 0-8 6.88v1.24a7.82 7.82 0 0 0 8 6.88 7.82 7.82 0 0 0 8-6.88V7.38zm-1.25 0h-3a11.34 11.34 0 0 0-.43-2.54 7.6 7.6 0 0 0 1.75-1 6 6 0 0 1 1.65 3.54zm-9.18 0a9.69 9.69 0 0 1 .37-2.14A8.43 8.43 0 0 0 8 5.5a8.49 8.49 0 0 0 2.09-.26 10.2 10.2 0 0 1 .37 2.14zm4.92 1.24a9.59 9.59 0 0 1-.37 2.14 8.53 8.53 0 0 0-4.18 0 9.69 9.69 0 0 1-.37-2.14zm.4-5A11.82 11.82 0 0 0 10 2a6.89 6.89 0 0 1 2 1 6.57 6.57 0 0 1-1.14.66zm-2.6-1.86a10 10 0 0 1 1.38 2.3A7.63 7.63 0 0 1 8 4.25a7.56 7.56 0 0 1-1.67-.19 9.82 9.82 0 0 1 1.38-2.3h.58zm-3.15 1.9A6.57 6.57 0 0 1 4 3a6.89 6.89 0 0 1 2-1 10.38 10.38 0 0 0-.86 1.66zM3 3.83a7.6 7.6 0 0 0 1.75 1 11 11 0 0 0-.43 2.54h-3A6 6 0 0 1 3 3.83zM1.28 8.62h3a11 11 0 0 0 .43 2.54 7.6 7.6 0 0 0-1.75 1 6 6 0 0 1-1.68-3.54zm3.86 3.72A10.38 10.38 0 0 0 6 14a6.89 6.89 0 0 1-2-1 6.57 6.57 0 0 1 1.14-.66zm2.57 1.9a9.82 9.82 0 0 1-1.38-2.3 7.43 7.43 0 0 1 3.34 0 9.76 9.76 0 0 1-1.38 2.3h-.58zm3.15-1.9a6.57 6.57 0 0 1 1.19.66 7.24 7.24 0 0 1-2 1 11.48 11.48 0 0 0 .81-1.66zm2.14-.17a7.6 7.6 0 0 0-1.75-1 10.8 10.8 0 0 0 .43-2.54h3A6 6 0 0 1 13 12.17z"/></svg>
+                          English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Español</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+    
+
+
+</html>
+

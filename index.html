@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="/netflix_icon.png">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
-
+<body>
     <section id="banner" class="text-white container-fluid">
         <header id="header" class="pt-4">
             <div class="container">
@@ -22,13 +23,13 @@
                         <div class="dropdown align-self-center">
                             <button class="btn btn-secondary dropdown-toggle language-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                <svg class="globe" fill="#ffffff" width="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.38A7.82 7.82 0 0 0 8 .5a7.82 7.82 0 0 0-8 6.88v1.24a7.82 7.82 0 0 0 8 6.88 7.82 7.82 0 0 0 8-6.88V7.38zm-1.25 0h-3a11.34 11.34 0 0 0-.43-2.54 7.6 7.6 0 0 0 1.75-1 6 6 0 0 1 1.65 3.54zm-9.18 0a9.69 9.69 0 0 1 .37-2.14A8.43 8.43 0 0 0 8 5.5a8.49 8.49 0 0 0 2.09-.26 10.2 10.2 0 0 1 .37 2.14zm4.92 1.24a9.59 9.59 0 0 1-.37 2.14 8.53 8.53 0 0 0-4.18 0 9.69 9.69 0 0 1-.37-2.14zm.4-5A11.82 11.82 0 0 0 10 2a6.89 6.89 0 0 1 2 1 6.57 6.57 0 0 1-1.14.66zm-2.6-1.86a10 10 0 0 1 1.38 2.3A7.63 7.63 0 0 1 8 4.25a7.56 7.56 0 0 1-1.67-.19 9.82 9.82 0 0 1 1.38-2.3h.58zm-3.15 1.9A6.57 6.57 0 0 1 4 3a6.89 6.89 0 0 1 2-1 10.38 10.38 0 0 0-.86 1.66zM3 3.83a7.6 7.6 0 0 0 1.75 1 11 11 0 0 0-.43 2.54h-3A6 6 0 0 1 3 3.83zM1.28 8.62h3a11 11 0 0 0 .43 2.54 7.6 7.6 0 0 0-1.75 1 6 6 0 0 1-1.68-3.54zm3.86 3.72A10.38 10.38 0 0 0 6 14a6.89 6.89 0 0 1-2-1 6.57 6.57 0 0 1 1.14-.66zm2.57 1.9a9.82 9.82 0 0 1-1.38-2.3 7.43 7.43 0 0 1 3.34 0 9.76 9.76 0 0 1-1.38 2.3h-.58zm3.15-1.9a6.57 6.57 0 0 1 1.19.66 7.24 7.24 0 0 1-2 1 11.48 11.48 0 0 0 .81-1.66zm2.14-.17a7.6 7.6 0 0 0-1.75-1 10.8 10.8 0 0 0 .43-2.54h3A6 6 0 0 1 13 12.17z"/></svg>
-                               English
+                              <span class="d-none d-md-inline"> English</span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                               <li><a class="dropdown-item" href="#">Español</a></li>
                             </ul>
                           </div>
-                        <button type="submit" id="signin">Sign In</button> 
+                        <button type="button" id="gotoSignIn">Sign In</button> 
                     </div>
                 </div>
             </div>
@@ -36,14 +37,14 @@
         </header>
 
         <div class="row w-100 m-0">
-            <div class="col-12 d-flex justify-content-center height-100 flex-column align-items-center">
+            <div class="col-12 d-flex justify-content-center height-100 flex-column align-items-center text-center">
                 <h1 class="display-5 fw-semibold">Unlimited movies, TV shows, and more</h1>
                 <p id="sub-intro">Watch anywhere. Cancel anytime.</p>
                 <p id="sub-sub-intro">Ready to watch? Enter your email to create or restart your membership.</p>
                 
                 <div>
                     <form>
-                        <input type="email" id="email" placeholder="Email address" min-length="10" required/>
+                        <input type="email" id="email-one" placeholder="Email address" min-length="10" required/>
             
                         <button type="button" id="get-started">
                             <strong>Get Started</strong>
@@ -73,25 +74,25 @@
     </section>
     
     <section id="tv" class="text-white container-fluid border-bottom-section height-100">
-        <div class="row d-flex justify-content-center height-100">
-            <div class="col-6 d-flex justify-content-center flex-column text-center">
+        <div class="row d-lg-flex justify-content-center height-100">
+            <div class="col-12 col-lg-6 d-flex justify-content-end justify-content-lg-center flex-column text-center">
                 <h1>Enjoy on your TV</h1>
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>     
             </div>
 
-            <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="w-50 justify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-start justify-content-lg-center flex-column align-items-center">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="img-tv justify-content-center">
             </div>
         </div>
     </section>
 
 
     <section id="watch" class="text-white container-fluid border-bottom-section height-100" >
-        <div class="row d-flex justify-content-center height-100">
-            <div class="col-6 d-flex justify-content-center flex-column align-items-center" >
-                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+        <div class="row d-lg-flex justify-content-center flex-lg-row flex-column-reverse height-100">
+            <div class="col-12 col-lg-6 d-flex justify-content-center flex-column align-items-center" >
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" class="img-tv">
             </div>
-            <div class="col-6 d-flex justify-content-center flex-column text-center" >
+            <div class="col-12 col-lg-6 d-flex justify-content-center flex-column text-center" >
                 <h1>Watch everywhere</h1>
                 <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
             </div>
@@ -101,14 +102,14 @@
     </section>
 
     <section id="kids" class="text-white container-fluid border-bottom-section height-100">
-        <div class="row d-flex justify-content-center height-100">
-            <div class="col-6 d-flex justify-content-center flex-column text-center" >
+        <div class="row d-lg-flex justify-content-center height-100">
+            <div class="col-12 col-lg-6 d-flex justify-content-md-center flex-column text-center justify-content-end" >
                 <h1>Create profiles for kids</h1>
                 <p>Send kids on adventures with their favorite characters in a space made just for them--free with your membership.</p>
             </div>
     
-            <div class="col-6 d-flex justify-content-center flex-column align-items-center" >
-                <img src="https://occ-0-851-853.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55">
+            <div class="col-12 col-lg-6 d-flex justify-content-start justify-content-lg-center flex-column align-items-center" >
+                <img src="https://occ-0-851-853.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" class="img-tv">
             </div>
         </div>
        
@@ -116,11 +117,11 @@
     </section>
 
     <section id="download" class="text-white container-fluid border-bottom-section height-100">
-        <div class="row d-flex justify-content-center height-100">
-            <div class="col-6 d-flex justify-content-center flex-column align-items-center" >
-                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg">
+        <div class="row d-lg-flex justify-content-center flex-lg-row flex-column-reverse height-100">
+            <div class="col-12 col-lg-6 d-flex justify-content-center flex-column align-items-center" >
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" class="img-tv">
             </div>
-            <div class="col-6 d-flex justify-content-center flex-column text-center"  >
+            <div class="col-12 col-lg-6 d-flex justify-content-center flex-column text-center"  >
                 <h1>Download your shows to watch offline</h1>
                 <p>Only available on ad-free plans.</p>
             </div>
@@ -130,7 +131,7 @@
     <!--Frequently Asked Questions-->
     <section id="faq" class="text-white height-100">
         <div class="text-white container">
-            <h1>Frequently Asked Questions</h1>
+            <h1 class="faq-heading">Frequently Asked Questions</h1>
             <div class="accordion accordion-flush" id="faqAccordion">
                 <div class="accordion-item mt-2">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -229,7 +230,7 @@
                     </div>
  
             <div class="row w-100 m-0 pt-5 border-bottom-section ready-watch">
-                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center text-center">
                     <p id="sub-sub-intro">Ready to watch? Enter your email to create or restart your membership.</p>
                     
                     <div>
@@ -256,8 +257,8 @@
             <div>
                 <p>Questions? Call <em>1-844-505-2993</em></p>
             </div>
-            <div class="row">
-                <div class="col-3 d-flex flex-column">
+            <div class="row margin-sm">
+                <div class="col-6 col-md-3 d-flex flex-column">
                     <a href="https://help.netflix.com/support/412" target="_self">FAQ</a>
                     <a href="http://ir.netflix.com/" target="_self">Investor Relations</a>
                     <a href="https://www.netflix.com/gift-cards" target="_self">Buy Gift Cards</a>
@@ -265,7 +266,7 @@
                     <a href="https://help.netflix.com/legal/notices" target="_self">Legal Notices</a>
                 </div>
     
-                <div class="col-3 d-flex flex-column">
+                <div class="col-6 col-md-3 d-flex flex-column">
                     <a href="https://help.netflix.com/" target="_self">Help Center</a>
                     <a href="https://jobs.netflix.com/jobs" target="_se">Jobs</a>
                     <a href="https://www.netflix.com/watch" target="_self">Ways to Watch</a>
@@ -274,7 +275,7 @@
                     <a href="https://www.netflix.com/browse/genre/839338" target="_self">Only on Netflix</a>
                 </div>
     
-                <div class="col-3 d-flex flex-column"> 
+                <div class="col-6 col-md-3 d-flex flex-column"> 
                     <a href="https://www.netflix.com/youraccount" target="_self">Account</a>
                     <a href="https://netflix.shop/" target="_self">Netflix Shop</a>
                     <a href="https://help.netflix.com/legal/termsofuse" target="_self">Terms of Use</a>
@@ -284,7 +285,7 @@
 
 
                 </div> 
-                <div class="col-3 d-flex flex-column">
+                <div class="col-6 col-md-3 d-flex flex-column">
                     <a href="https://media.netflix.com/" target="_self">Media Center</a>
                     <a href="https://www.netflix.com/redeem" target="_self">Redeem Gift Cards</a>
                     <a href="https://help.netflix.com/legal/privacy" target="_self">Privacy</a>
@@ -295,7 +296,7 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle language-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle language-btn footer-language" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg class="globe" fill="#ffffff" width="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.38A7.82 7.82 0 0 0 8 .5a7.82 7.82 0 0 0-8 6.88v1.24a7.82 7.82 0 0 0 8 6.88 7.82 7.82 0 0 0 8-6.88V7.38zm-1.25 0h-3a11.34 11.34 0 0 0-.43-2.54 7.6 7.6 0 0 0 1.75-1 6 6 0 0 1 1.65 3.54zm-9.18 0a9.69 9.69 0 0 1 .37-2.14A8.43 8.43 0 0 0 8 5.5a8.49 8.49 0 0 0 2.09-.26 10.2 10.2 0 0 1 .37 2.14zm4.92 1.24a9.59 9.59 0 0 1-.37 2.14 8.53 8.53 0 0 0-4.18 0 9.69 9.69 0 0 1-.37-2.14zm.4-5A11.82 11.82 0 0 0 10 2a6.89 6.89 0 0 1 2 1 6.57 6.57 0 0 1-1.14.66zm-2.6-1.86a10 10 0 0 1 1.38 2.3A7.63 7.63 0 0 1 8 4.25a7.56 7.56 0 0 1-1.67-.19 9.82 9.82 0 0 1 1.38-2.3h.58zm-3.15 1.9A6.57 6.57 0 0 1 4 3a6.89 6.89 0 0 1 2-1 10.38 10.38 0 0 0-.86 1.66zM3 3.83a7.6 7.6 0 0 0 1.75 1 11 11 0 0 0-.43 2.54h-3A6 6 0 0 1 3 3.83zM1.28 8.62h3a11 11 0 0 0 .43 2.54 7.6 7.6 0 0 0-1.75 1 6 6 0 0 1-1.68-3.54zm3.86 3.72A10.38 10.38 0 0 0 6 14a6.89 6.89 0 0 1-2-1 6.57 6.57 0 0 1 1.14-.66zm2.57 1.9a9.82 9.82 0 0 1-1.38-2.3 7.43 7.43 0 0 1 3.34 0 9.76 9.76 0 0 1-1.38 2.3h-.58zm3.15-1.9a6.57 6.57 0 0 1 1.19.66 7.24 7.24 0 0 1-2 1 11.48 11.48 0 0 0 .81-1.66zm2.14-.17a7.6 7.6 0 0 0-1.75-1 10.8 10.8 0 0 0 .43-2.54h3A6 6 0 0 1 13 12.17z"/></svg>
                           English
                         </button>
@@ -311,8 +312,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    <script src="main.js"></script>
 </body>
+    
+
+
 </html>
 
 
